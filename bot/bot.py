@@ -1,14 +1,12 @@
 import os
 from dotenv import load_dotenv
 import requests
-# import telebot
 import logging
-from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
+from telegram import Update
 from telegram.ext import (
     ApplicationBuilder,
     CommandHandler,
     CallbackContext,
-    CallbackQueryHandler,
     ConversationHandler,
     MessageHandler,
     filters,
@@ -16,7 +14,6 @@ from telegram.ext import (
 
 load_dotenv()
 BOT_TOKEN = os.environ['BOT_TOKEN']
-# bot = telebot.TeleBot(BOT_TOKEN)
 defaultRegion = ""
 
 twoHourForecast = "https://api-open.data.gov.sg/v2/real-time/api/two-hr-forecast"

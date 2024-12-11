@@ -1,3 +1,6 @@
+Cython==0.29.34  # or a newer version compatible with your setup
+setuptools>=65.5.0
+wheel>=0.37.1
 anyio==4.7.0
 asgiref==3.8.1
 beautifulsoup4==4.12.3
@@ -5,7 +8,6 @@ blinker==1.4
 certifi==2024.7.4
 charset-normalizer==3.3.2
 cryptography==3.4.8
-Cython==0.29.34  # or a newer version compatible with your setup
 dbus-python==1.2.18
 distro==1.7.0
 Django==5.1.4
@@ -41,7 +43,6 @@ pytz==2024.1
 PyYAML==5.4.1
 requests==2.32.3
 SecretStorage==3.3.1
-setuptools>=65.5.0
 six==1.16.0
 sniffio==1.3.1
 soupsieve==2.5
@@ -50,5 +51,4 @@ tqdm==4.66.5
 typing_extensions==4.12.2
 tzdata==2024.1
 wadllib==1.3.6
-wheel>=0.37.1
 zipp==1.0.0

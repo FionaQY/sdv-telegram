@@ -146,6 +146,7 @@ async def parseSdvFile(update: Update, context: CallbackContext) -> int:
     if "error" in parsed_data:
         await update.message.reply_text(f"Error parsing file: {parsed_data['error']}") 
     else:
+        context.user_data['sdv_save_data'] = parsed_data
         analysis_results = f"Player Name: {parsed_data['player_name']}\nGame Version: {parsed_data['game_version']}"
         await update.message.reply_text(f"Analysis:\n{analysis_results}")
         
